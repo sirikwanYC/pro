@@ -1,8 +1,12 @@
 h1{
     color:black;
+    font-weight: bold;
    
     background: orange;
 }
 body{
-    background: gray;
+    
+    background-image: url("images/cc.jpg");
+    background-color: GhostWhite;
+    
 }
