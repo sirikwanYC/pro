@@ -1,15 +1,51 @@
 <html>
     <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Thitaya</title>
+        <link rel="stylesheet"type="text/css"href="t.css">
+        <script src="tt.js"></script>
+        
     </head>
     <body>
-        <h1>กรอกข้อมูล</h1>
-        <label for="name">ชื่อ-สกุล</label>
-        <input type="text" name="name" placeholder="กรอกชื่อเท่านั้น" required autofocus>
-        <label for="age">อายุ</label>
-        <input type="text" name="age" placeholder="อายุ" >
-        <label for="link">สิ่งที่ชอบ</label>
-        <input type="checkbox" name="link" placeholder="สิ่งที่ชอบ" required>
+        <center><h1>กรอกข้อมูล</h1></center>
+      <br>
+ 
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                   
+                    <form align="center">
+                      <div class="form-group">
+                            <label for="name">ชื่อ-สกุล</label>
+                    <input type="text" name="name" placeholder="กรอกชื่อเท่านั้น" required autofocus class="form-control">
+                     <br>
+                    <label for="age">อายุ</label>
+                    <input type="text" name="age" placeholder="อายุ" class="form-control" >
+                    <br><br>
+                    <center>
+                    
+                    <label for="link">สิ่งที่ชอบ</label>
+                    <select name="like">
+                        <option value="">เลือก</option>
+                        <option value="music" >เพลง</option>
+                        <option value="game">Game</option>
+                        <option value="Facebook">facebook</option>
+                        <option value="cat">แมว</option>
+                        <option value="dog">หมา</option>
+                    </select>
+                    <br><br>
+                   
+                    <label for="sex">เพศ</label>
+                    <input type="radio" name="sex" value="women">หญิง
+                    <input type="radio" name="sex" value="men">ชาย
+             <br><br>
 
+                   <input type="submit" class="btn btn-info btn-sm"  class="w3-button w3-light-grey" value="สมัคร">
+                    </form>
+                </center>
+                  </div>
+                  
     </body>
 </html>
