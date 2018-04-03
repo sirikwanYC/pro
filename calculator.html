@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>EIEI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <h1><a href="index.html">EIEI</a></h1>
+  </header>
+</div>
+  <nav id="mainav" class="hoc clear"> 
+    <ul class="clear">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a class="drop" href="#">Pages</a>
+        <ul>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="pages/full-width.html">Full Width</a></li>
+          <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+          <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+          <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">Dropdown</a>
+        <ul>
+          <li><a href="#">Level 2</a></li>
+          <li><a class="drop" href="#">Level 2 + Drop</a>
+            <ul>
+              <li><a href="#">Level 3</a></li>
+              <li><a href="#">Level 3</a></li>
+              <li><a href="#">Level 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Level 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Link Text</a></li>
+      <li><a href="#">Link Text</a></li>
+      <li><a href="#">Link Text</a></li>
+      <li><a href="#">Long Link Text</a></li>
+    </ul>
+  </nav>
+</div>
+<div  style="background-image:url('images/ta.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Calculator</h6>
+    </div>
+    
+    <ul class="nospace group services">
+        <li class="tree_third first">
+          <article><i class="fa fa-calculator"></i>
+           <center> <input type="number" id="num1" name="num1">  
+            <br>
+           <select id="money1"> 
+                    <option value="เงินไทย"> เงินไทย </option>
+                    <option value="เงินดอลล่า">  เงินดอลล่า </option>
+                    <option value="เงินเยน"> เงินเยน </option>
+           </select> --> 
+           <select id="money2">
+                <option value="เงินไทย"> เงินไทย </option>
+                <option value="เงินดอลล่า">  เงินดอลล่า </option>
+                <option value="เงินเยน"> เงินเยน </option>
+           </select>
+        </center>
+           <center><footer><button type="submit" onclick="cal()"> แปลง </button></footer>
+            <br>
+           <p id="total" name="total"></p></center>
+          </article>
+        </li>
+    </ul>
+   
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Vestibulum ante ipsum primis</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Street Name &amp; Number, Town, Postcode/Zip
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">In faucibus orci luctus</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">Ultrices posuere cubilia</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+            <p class="nospace">Lorem laoreet blandit donec mollis lacinia massa tincidunt malesuada [&hellip;]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">Curae cras tincidunt eros</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+            <p class="nospace">In id semper turpis in tristique dui ut ac mauris magna nunc eros enim [&hellip;]</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Tincidunt facilisis eros ut</h6>
+      <p class="nospace btmspace-30">Pulvinar venenatis commodo sed accumsan eu erat nunc ante sagittis a dolor in.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script>
+    function cal(){
+        var n1 = parseInt(document.getElementById("num1").value);
+        var m1 = document.getElementById("money1").value;
+        var m2 = document.getElementById("money2").value;
+        var total;
+
+        if(m1=="เงินไทย"){
+            if(m2=="เงินไทย"){
+                total=n1;
+            }else if(m2=="เงินดอลล่า"){
+                total=n1*34;
+            }else if(m2=="เงินเยน"){
+                total=n1*3;
+            }
+        }else if(m1=="เงินดอลล่า"){
+            if(m2=="เงินไทย"){
+                total=n1/34;
+            }else if(m2=="เงินดอลล่า"){
+                total=n1;
+            }else if(m2=="เงินเยน"){
+                total=n1*105.91;
+            }
+
+        }else if(m1=="เงินเยน"){
+            if(m2=="เงินไทย"){
+                total=n1/3;
+            }else if(m2=="เงินดอลล่า"){
+                total=n1/105.91;
+            }else if(m2=="เงินเยน"){
+                total=n1;
+            }
+
+        }
+        document.getElementById("total").innerHTML = total;
+    }
+</script>
+</body>
+</html>
