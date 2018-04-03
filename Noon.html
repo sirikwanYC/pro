@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <TITLE> 긍정적 인 </TITLE>
+        <META NAME="Generator" CONTENT="EditPlus">
+        <META NAME="Author" CONTENT="">
+        <META NAME="Keywords" CONTENT="">
+        <META NAME="Description" CONTENT="">
+    </HEAD>
+    
+    <BODY>
+        <center><font size = "7">บวกเลข </font><br><br>
+        <form name='frmtest'>
+            <th>
+                <input type='txtone' id='txtone' name='txtone' value='' onkeyup='plus()' />
+            </th><br><br>
+            <th>
+                <input type='txttwo' id='txttwo' name='txttwo' value='' onkeyup='plus()' />
+            </th><br><br>
+            <th>
+                    <input type='txtfour' id='txtfour' name='txtfour' value='' onkeyup='plus()' />
+                </th><br><br>
+            <th>
+                <input type='txtthree' id='txtthree' name='txtthree' value=0 />
+            </th><br><br>
+        </form></center>
+    </BODY>
+    <script language='javascript' type='text/javascript'>
+        function plus(){
+            var one = document.frmtest.txtone.value;
+            var two = document.frmtest.txttwo.value;
+            var four = document.frmtest.txtfour.value;
+            if(one == "" || two == "" || four == ""){return false;}
+            var three = 0;
+            three = Number(one)  + Number(two) + Number(four);
+            frmtest.txtthree.value = three;
+        }
+    </script>
+</HTML>
