@@ -20,10 +20,10 @@
 </div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
-    <div class="sectiontitle">
-      <h6 class="heading">Calculator</h6>
-    </div>
-    
+   
+      <br>
+      <br>
+      <center><h6 class="heading">CALCULATOR</h6></center>
     <ul class="nospace group services">
         <li class="tree_third first">
           <article><i class="fa fa-calculator"></i>
@@ -43,6 +43,30 @@
            <center><footer><button class="btn btn-warning" type="submit" onclick="cal()"> แปลง </button></footer>
             <br>
            <p id="total" name="total"></p></center>
+          </article>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <center><h6 class="heading">BMI</h6></center>
+    <ul class="nospace group services">
+        <li class="tree_third first">
+          <article><i class="fa fa-tachometer"></i>
+            <center> 
+            <select id="gender" > 
+                <option > --- เลือกเพศ --- </option>
+                <option value="ชาย"> ชาย </option>
+                <option value="หญิง"> หญิง </option>
+            </select> 
+            <br>
+          <input type="number" id="w" name="w" placeholder=" กรอกน้ำหนัก">
+          <br>
+          <input type="number" id="h" name="h" placeholder=" กรอกส่วนสูง">
+          <footer><button class="btn btn-warning" type="submit" onclick="calBmi()"> คำนวณ </button></footer>
+            <br>
+           <p id="totalBmi" name="totalBmi"></p>
+           <p id="resultBMI" name="resultBMI"></p>
+          </center>
           </article>
         </li>
     </ul>
@@ -89,7 +113,50 @@
             }
 
         }
-        document.getElementById("total").innerHTML = "ค่าเงิน: " + total;
+        document.getElementById("total").innerHTML = "ค่าเงิน: " + total.toFixed(2);
+    }
+    function calBmi(){
+      var gen = document.getElementById("gender").value;
+      var w = parseFloat(document.getElementById("w").value);
+      var h = parseFloat(document.getElementById("h").value);
+      var total;
+      var resultBMI;
+
+      total = w/((h/100)*(h/100));
+
+      if(gen=="หญิง"){
+        if(total>=0 && total<=18.5){
+          resultBMI="น้ำหนังต่ำกว่าเกณฑ์";
+        }else if(total>18.5 && total<=22.9){
+          resultBMI="สมส่วน";
+        }else if(total>22.9 && total<=24.9){
+          resultBMI="น้ำหนักเกิน";
+        }else if(total>24.9 && total<=29.9){
+          resultBMI="อ้วนระดับ 1";
+        }else if(total>22.9){
+          resultBMI="อ้วนระดับ 2";
+        }
+      }else if(gen=="ชาย"){
+        if(total>=0 && total<=19){
+          resultBMI="น้ำหนังต่ำกว่าเกณฑ์";
+        }else if(total>19 && total<=24.9){
+          resultBMI="สมส่วน";
+        }else if(total>24.9 && total<=29.9){
+          resultBMI="อ้วนระดับ 1";
+        }else if(total>22.9){
+          resultBMI="อ้วนระดับ 2";
+        }
+
+      }
+
+      console.log(total);
+      console.log(resultBMI);
+      
+
+      document.getElementById("totalBmi").innerHTML = "ค่าดัชนีมวลกาย: " + total.toFixed(2);
+      document.getElementById("resultBMI").innerHTML = "ผลดัชนีมวลกาย: " + resultBMI;
+
+
     }
 </script>
 </body>
